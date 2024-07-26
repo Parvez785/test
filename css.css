@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: "Playfair Display", serif;
+    overflow-x: hidden !important;
+}
+
+.navbar {
+    background: #F5F5F5;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    padding-top: 10px;
+
+}
+
+.navbar .navbar-brand {
+    padding-left: 0;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.navbar-nav {
+    margin-left: 270px;
+}
+
+.navbar .navbar-brand b {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link .navbar .sign-up-btn {
+    min-width: 110px;
+    max-height: 36px;
+}
+
+.navbar .dropdown-menu {
+    color: #999;
+    font-weight: normal;
+    border-radius: 1px;
+    border-color: #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.navbar .btn-primary {
+    color: #fff;
+    background: #33cabb !important;
+    border: none;
+}
+
+.navbar .btn-primary:hover,
+.navbar .btn-primary:focus {
+    color: #fff;
+    background: #31bfb1 !important;
+}
+
+.navbar .action-buttons .dropdown-toggle::after {
+    display: none;
+}
+
+
+
+button {
+    background-color: #fb1b26;
+    transition: all .15s;
+    cursor: pointer;
+    background-position: center;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1.13rem;
+    padding: 10px 40px;
+    color: white;
+    border: none;
+    /* height: 40px; */
+}
+
+body>section.hero>div>div>div.col-md-6.mt-4>img {
+    width: 90%;
+    height: auto;
+}
+
+.card {
+    box-shadow: 0 2px 8px #00000026;
+    border-radius: .5rem;
+    transition: box-shadow .2s;
+    cursor: pointer;
+
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.golden-icon {
+    color: gold;
+}
+
+section.pt-5.pb-5 {
+    margin: 20px 40px;
+}
+
+
+
+.card-contcat {
+    padding: 6px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.card-main {
+    margin-top: 30px;
+}
+
+.card-main {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+.icon-section {
+    font-size: 20px;
+
+}
+
+.card-main:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.slide-home-main {
+    margin: 10px 0px;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    display: none;
+}
+
+a {
+    color: black;
+}
+
+@media screen and (max-width:767px) {
+    .navbar-nav {
+        margin-left: 0px;
+    }
+
+    body>section.hero>div>div>div.col-md-6.mt-4>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .navbar-nav {
+        margin-left: 0px;
+    }
+
+    body>section.hero>div>div>div.col-md-6.mt-4>img {
+        width: 80%;
+        height: auto;
+    }
+
+}

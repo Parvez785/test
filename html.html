@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Booking Place</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        // Prevent dropdown menu from closing when click inside the form
+        $(document).on("click", ".action-buttons .dropdown-menu", function (e) {
+            e.stopPropagation();
+        });
+
+        function display() {
+            var a = document.getElementsByClassName("div.sc-iMWBiJ.fqJYVn.commonninja-ribbon");
+            a.style.display = "none";
+        }
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light pt-2 container-fluid">
+        <a href="#" class="navbar-brand ml-md-5"><b>Booking Place</b></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link">Home</a>
+                <a href="#" class="nav-item nav-link">About</a>
+                <a href="#" class="nav-item nav-link ">Location</a>
+                <a href="#" class="nav-item nav-link">Blog</a>
+                <a href="#" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class="navbar-nav ml-auto action-buttons">
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle mr-4">Login</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle sign-up-btn">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container-fluid ml-md-5">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="text-hero pt-4">
+                        <h1>Welcome to Booking Palace: Your Perfect Venue Awaits</h1>
+                        <p class="pt-2">At Booking Palace, we make your celebrations extraordinary. Explore our
+                            handpicked selection of stunning wedding venues and charming halls perfect for birthdays.
+                            Whether you're planning a grand wedding or an intimate birthday party, we have the ideal
+                            space to suit your needs. </p>
+                    </div>
+                    <div class="search-btn d-md-flex">
+                        <button type="submit">Contact Us</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <img src="https://img.freepik.com/free-photo/glance-path-leads-bright-archs-with-flowers-dark-room_1304-3344.jpg?size=626&ext=jpg"
+                        alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about py-4 bg-light mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-12 pt-3 text-center">
+                    <div class="heading">
+                        <h1>Creating Unforgettable Memories, One Venue at a Time</h1>
+                    </div>
+                    <div class="p pt-2">
+                        <p>At Booking Palace, we are dedicated to helping you find the perfect venue for your most
+                            cherished occasions. Specializing in wedding venues and small halls for birthday
+                            celebrations,
+                            our mission is to make your event planning seamless and stress-free.
+                        </p>
+                        <p> Our journey began with a simple idea: to provide a platform where people can easily discover
+                            and
+                            book exceptional venues that match their vision and style. We believe that every celebration
+                            deserves a beautiful and fitting setting, whether it’s the elegance of a wedding ceremony or
+                            the joy of a birthday bash.
+                        </p>
+                        <p>
+                            With a curated list of venues that cater to diverse tastes and budgets, Booking Palace
+                            ensures
+                            that you have access to the best options available. Our user-friendly platform allows you to
+                            browse, compare, and book with ease, giving you more time to focus on creating lasting
+                            memories.
+                        </p>
+                        Join us at Booking Palace, where your special moments find their perfect place.
+
+                        <div class="search-btn d-md-flex justify-content-center mt-5">
+                            <button type="submit">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="container-fluid">
+            <div class="home-demo ">
+                <h3 class="text-center my-5">Explore our Wedding Venues</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="Royal Moments Banquet"
+                                    src="https://lh5.googleusercontent.com/p/AF1QipOiFzeyPe1aFXryVRt07cf6EZDDgst2_CXXYx0J=w260-h173-p-k-no">
+                                <div class="card-body">
+                                    <h4 class="card-title">Sameer Banquet halls</h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.9(3)</strong> Shivaji Nagar</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-people"></i> 200-300</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280"
+                                    src="https://lh5.googleusercontent.com/p/AF1QipNnqkfkEaD6Od48-X-SHhGSwUQzcst6pDRa2TGB=w260-h175-n-k-no">
+                                <div class="card-body">
+                                    <h4 class="card-title">Aisshwarya Banquet Hall
+                                    </h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.2(3)</strong> Ambegaon Budruk</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="Shahnai Function Hall"
+                                    src="https://lh5.googleusercontent.com/p/AF1QipO68vjUzZUhLmFurG9Vdpwm6rdPmlkmH2PAh-Cj=w130-h87-n-k-no">
+                                <div class="card-body">
+                                    <h4 class="card-title">Shahnai Function Hall</h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 3.5(3)</strong> Katraj</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="Usha Palace Banquet Hall"
+                                    src="https://lh5.googleusercontent.com/p/AF1QipM2F4JT9bNN_GtCKmVnHEHin3355vtjjcrUpBoo=w260-h175-n-k-no">
+                                <div class="card-body">
+                                    <h4 class="card-title">Usha Palace Banquet Hall
+                                    </h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.9(3)</strong> Shivaji Nagar</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280"
+                                    src="https://cdn0.weddingwire.in/vendor/7632/3_2/960/jpeg/weddingvenue-sameer-banquet-lawns-banquet-hall-3_15_457632-169831409712283.webp">
+                                <div class="card-body">
+                                    <h4 class="card-title">Sameer Banquet halls</h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.9(3)</strong> Shivaji Nagar</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="Royal Moments Banquet" "
+                                    src="
+                                    https://lh3.googleusercontent.com/p/AF1QipMfZcyTE4gfChL8-uRQ5XlO9IvlSjStTD697Vni=s1360-w260-h175" />
+                                <div class=" card-body">
+                                    <h4 class="card-title">Royal Moments Banquet
+                                    </h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.9(3)</strong>Hadapsar</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt=" Nahata Banquet"
+                                    src="
+                                    https://cdn0.weddingwire.in/vendor/7558/3_2/960/jpeg/img-7233_15_417558-170295758330438.webp" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Nahata Banquet
+                                    </h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.9(3)</strong>Pune</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="MSD Banquet"
+                                    src="
+                                    https://lh3.googleusercontent.com/p/AF1QipNIr0gzjwt61Jh726EHn9J3ewxmjjZk4HbmojHv=s1360-w2600-h170" />
+                                <div class=" card-body">
+                                    <h4 class="card-title">MSD Banquet & halls
+                                    </h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.9(3)</strong>Hadapsar</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="Trimurti Garden Mangal Karyalay "
+                                    src="
+                                    https://lh5.googleusercontent.com/p/AF1QipPlMHqJRi2ECuwfmUFS-qdXnsar8eEwCjjTMPxc=w260-h150-n-k-no" />
+                                <div class=" card-body">
+                                    <h4 class="card-title">Trimurti Garden Mangal Karyalay
+
+                                    </h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.9(3)</strong>Hadapsar</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="mb-3">
+                            <div class="card">
+                                <img class="img-fluid" alt="Gurukrupa Banquet Hall "
+                                    src="
+                                    https://lh5.googleusercontent.com/p/AF1QipNmQScv7YVZIKK5RtFAbwBY9YiB44tjVuODPHy9=w181-h118-n-k-no-nu" />
+                                <div class=" card-body">
+                                    <h4 class="card-title">Gurukrupa Banquet Hall
+                                    </h4>
+                                    <p class="card-text"><i class="bi bi-star-fill golden-icon"></i>
+                                        <span><strong> 4.9(3)</strong>Hadapsar</span>
+                                    </p>
+                                    <p class="card-text p-0"><i class="bi bi-currency-rupee"></i> 20,000-30,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="container">
+            <div class="heading-benefits mt-5 pt-3 text-center">
+                <h1 class="text-center ">Why Choose Us for Your Special Day?
+                </h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-main">
+                        <div class="card-heading d-flex justify-content-between">
+                            <h5> Wide Selection of Venues</h4>
+                                <div class="icon-section">
+                                    <p class="icon"> 🏰</p>
+                                </div>
+                        </div>
+                        <div class="content">
+                            <p>Choose from a wide range of beautiful venues, from charming gardens to luxurious
+                                banquet halls, perfect for any occasion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-main">
+                        <div class="card-heading d-flex justify-content-between">
+                            <h5> Easy Online Booking</h4>
+                                <div class="icon-section">
+                                    🖥️
+                                </div>
+                        </div>
+                        <div class="content">
+                            <p>Book your venue effortlessly through our user-friendly online platform, available
+                                24/7.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-main">
+                        <div class="card-heading d-flex justify-content-between">
+                            <h5> Competitive Pricing</h4>
+                                <div class="icon-section">
+                                    💰
+                                </div>
+                        </div>
+                        <div class="content">
+                            <p>Choose from a wide range of beautiful venues, from charming gardens to luxurious
+                                banquet halls, perfect for any occasion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <div class="card-main">
+                        <div class="card-heading d-flex justify-content-between">
+                            <h5>Expert Support</h5>
+                            <div class="icon-section">
+                                <p class="icon"> 📞 </p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Our team of experts is here to assist you with every step of the planning process,
+                                providing personalized support and advice..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-main">
+                        <div class="card-heading d-flex justify-content-between">
+                            <h5> Competitive Pricing</h4>
+                                <p class="icon"> 🎁 </p>
+                        </div>
+                        <div class="content">
+                            <p>Customize your wedding package to include catering, decor, and other services to suit
+                                your unique needs and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card-main">
+                        <div class="card-heading d-flex justify-content-between">
+                            <h5> High-Quality Amenities</h4>
+                                <div class="icon-section">
+                                    <p class="icon"> ⭐ </p>
+                                </div>
+                        </div>
+                        <div class="content">
+                            <p>CEnjoy high-quality amenities at all our venues, from state-of-the-art facilities to
+                                exquisite decor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer 2 - Bootstrap Brain Component -->
+    <footer class="footer mt-5">
+        <!-- Widgets - Bootstrap Brain Component -->
+        <section class="bg-light py-4 py-md-5 py-xl-8 border-top border-light">
+            <div class="container overflow-hidden">
+                <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <a href="#!">
+                                <h3> Booking Place</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <h4 class="widget-title mb-4">Get in Touch</h4>
+                            <address class="mb-4">8014 Edith Blvd NE, Albuquerque, Katraj, Pune India</address>
+                            <p class="mb-1">
+                                <a class="link-secondary text-decoration-none" href="tel:+918999001967">(899)
+                                    00-1967</a>
+                            </p>
+                            <p class="mb-0">
+                                <a class="link-secondary text-decoration-none"
+                                    href="mailto:parvez@bookingplace.com">parvez@bookingplace.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <h4 class="widget-title mb-4 mt-3">Learn More</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#!" class=" text-black text-decoration-none">About</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class=" text-decoration-none">Contact</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class=" text-decoration-none">Location</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class=" text-decoration-none">Blog</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="#!" class=" text-decoration-none">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright - Bootstrap Brain Component -->
+        <div class="bg-light py-4 py-md-5 py-xl-8 ">
+            <div class="container overflow-hidden">
+                <div class="row gy-4 gy-md-0 align-items-md-center">
+                    <div class="col-xs-12 col-md-7 order-1 order-md-0">
+                        <div class="copyright text-center text-md-start">
+                            &copy; Booking Place 2024. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
